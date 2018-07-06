@@ -20,7 +20,6 @@
     {% for page in site.pages %}  
         {% if page.tag == "project-page" %}
                 <a href="{{page.url}}">{{page.title}}</a>
-            {% elsif page.tag != "project-page" %}
         {% endif %}
     {% endfor %}
       
