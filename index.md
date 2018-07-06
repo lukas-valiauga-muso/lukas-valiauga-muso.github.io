@@ -14,7 +14,6 @@
       
     
       
-      <p> {{ content }}</p>
       
       
     {% for page in site.pages %}  
