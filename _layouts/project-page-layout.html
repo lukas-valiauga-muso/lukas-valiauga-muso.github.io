@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{page.project-page-title}}</title>
+    {% include external-dependancies.html %}   
+    <link rel="stylesheet" type="text/css" href="/css/project-page-stylesheet.css">  
+  </head>
+  
+  <body>  
+    <div class="row header-wrapper" style="">
+        <div class="container testimonial-group">
+          <div class="row" id="text-center">  
+                {% for image in site.static_files %}
+                    {% if image.path contains page.title %}
+                        <div class="col-xs-4" style="width:50vw; padding-top:15vh;">
+                            <img class="" src="{{ site.baseurl }}{{ image.path }}" alt="image" />         
+                        </div>
+                    {% endif %}
+                {% endfor %} 
+          </div>
+        </div>
+    </div>
+      
+    <script src="{{ "/assets/js/horizontal-scroll-script.js" }}"></script>
+    
+</body>
+</html>
