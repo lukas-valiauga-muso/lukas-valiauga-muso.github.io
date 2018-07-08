@@ -1,0 +1,73 @@
+<style>
+.navbar{
+        border-radius: 0px;
+        background-color: rgba(255, 255, 255, 0);
+        border-style: none;
+        padding-top: 35px;
+    
+    
+    }
+.navbar-right{
+    padding-right: 50px;    
+    }    
+   .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 111111111;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 1);        
+}
+    .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+</style>
+
+<nav class="navbar navbar-default" style="position:fixed; width:100vw;">
+ <div class="container-fluid">    
+  <ul class="nav navbar-nav navbar-right">
+    <li><a class="" href="/.">{{ site.title }}</a></li>
+    <li><span class="a-page-info" style="font-size:30px;cursor:pointer" onclick="">&#9776;</span></li>
+  </ul>
+ </div>
+</nav>
+
+<div class="overlay">
+    <a href="" id="close-btn-2">&times;</a>   
+    <a href="#">Bio</a>
+    <a href="/_pages/page-list.html">Page List</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>    
+
+<script>
+$('.a-page-info').click(function(){
+    console.log(".a-page-info");
+        $(".overlay").fadeIn().css("display","block");
+});    
+
+</script>

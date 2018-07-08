@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Andale_Mono;
+    src: url(/assets/fonts/Andale_Mono.woff);
+}
+
+@font-face {
+    font-family: Pesaro;
+    src: url(/assets/fonts/Hoftype_Pesaro_Bold.woff);
+}
+
+body{
+/*    overflow: hidden;*/
+}
+
+.interactive-text{
+    text-indent: -2.3%;
+    padding-top: 80px;
+    padding-left: 50px;
+    font-family: Pesaro;
+    font-size: 10vh;
+    color: black;
+    transition: 0.3s;
+    
+}
+
+

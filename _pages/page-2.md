@@ -1,10 +1,19 @@
 ---
-title: Page 1
-layout: default
-categories: [fruit]
+title: page-2
+project-page-title: Japonijos dienos meniu
+layout: project-page-layout
+tag: project-page
 ---
+<h1>
+Apie projektą
+Japonijos dienos meniu<br>
+2009
+<br><br>
+Japonija pasivaideno tarsi mitas, kurį vis dar saugo vienišos medinės šventyklos, pasislėpusios po didingais nuogų sakurų skliautais. Ryžių baltumo kalnai vasario mėnesį iš tolo atrodo švelniai apžėlę, bet klaidūs ir nepraeinami – žengus artyn. 
+Niigatos prefektūroje, kurioje gyvena apie 2,8 mln. žmonių ir yra kiek didesnė už Lietuvą, fotoprojektas prasidėjo nuo šiaurinėje jos dalyje esančio Agos regiono, jungiančio kalnuose išsibarsčiusius miestelius. Vėliau – kelionė žemyn link Japonijos jūros pakrantės: samurajų dvasią menančio Murakamio, žuvim prakvipusio Teradomario, žvejų miestelio Ogio Sado saloje ir Ryoutsu uosto, mažytės Avašimos salos. Kelionė baigėsi Niigatos mieste, prekybos uoste prie dviejų didžiųjų Japonijos upių žiočių. 
+„Japonijos dienos meniu“ tapo mano kasdienybe. Kasdienybė – tai palikti batai ant slenksčio ir nutirpusios po užpakaliu suraitytos kojos, tai stipriai tarp pirštų suspaustos užsispyrusios ir neklusnios lazdelės, neramus miegas su karšto vandens pūsle lauko temperatūros riokano kambarėlyje, šildomas klozeto dangtis su keturiomis apiplovimo programomis (didžiausias techninio progreso pasiekimas ir tikras džiaugsmas šaltą rytą). Kasdienybė – tai švelniai skambi, tarsi iš kalnų sklindanti šeimininkės daina, žadinanti pusryčių, mažas žalios karštos arbatos puodelis, kvepiantis šviežiu pienu. Kasdienybė – tai burnoje tirpstantis šviežios žuvies sašimis su kvapą gniaužiančiu ir ašaras spaudžiančiu vasabi. Ir pažliugusiose lysvėse juokingai išlindusios ropės kaip seno japono dantys,  miso ruošiančių bobučių Nihon Buyo šokis aplink virš laužo verdantį sklidiną sojos pupelių katilą, tinkluose neatsitiesiančios moterys, narpliojančios žuvį, tarsi jos būtų pagautos, o ne žuvis... Saulėto sekmadienio ryto šurmulys žuvų turguje... Begalinis krautuvėlės pardavėjų linkčiojimas ir nesibaigianti nepažįstamos kalbos daina:  „domo arigato – gorainasu – šita“, – tarsi garso takelis besisukanti galvoje.... Palaimingas atsipalaidavimas karšto šaltinio versmėje po ilgos dienos, šilta sakė iš nuolankiai pasilenkusios šeimininkės rankų ir vakaras, skambantis nuo įkaušusio kvatojimo ir „kampai“ – raginimo išgerti dar.
+Kasdienybė tai kiekviena sekanti diena, kaip laimingas nesusipratimas ir neviltis žiūrint į hieroglifus, o paklausus angliškai – išsamiai ilgas atsakymas japoniškai. 
+Projekto fotografijos tai – gamtos, veido ir patiekalo „peizažai“ bei už jų slypinti kasdienybė, nurodanti į japonų buitį ir tapatybės išskirtinumą. Dienos patiekalas japoniškoje buityje yra natūrali supančios gamtos refleksija. Pasak japonologų, estetinė peizažo samprata suformuota sintoizmo yra tapusi veidrodišku aplinkos vaizdavimo principu ne kurti ką nors naują, bet spontaniškai ir intuityviai atspindėti kas regima ir girdima. Toks japoniškosios saviraiškos išaiškinimas – tai europietiškasis poreikis viską logiškai pagrįsti. Kaip be būtų, remiantis europietišku veidrodžio aiškinimu japonų mitologijoje  (kaip švarumo ir tyros sielos simbolis), apie kurį jie patys mažai ką žino, buvo sukonstruoti 3-ų ir 4-ių veidrodžių kaleidoskopai. Į japonišką „Pringles“ traškučių tūtą įstatyti veidrodžiai ir užmauti ant japonų gamybos fotokameros objektyvo tapo mano europietiškos akies tęsiniu ir magiška optine sistema, neprognozuojamai atspindinčia aplinką. Į fragmentus suskaidytas fotografuojamos realybės atspindys neturi nei pradžios, nei pabaigos ir pabrėžia kasdienybės momentiškumą ir nepastovumą. „Japonijos dienos meniu“ – tai žmones, gamtovaizdį ir maistą jungianti fotografija – nėra fotokamera sustabdyta gyvenimo akimirka. Tai – socialinės aplinkos fragmentų kaleidoskopo vienas judesys. 
 
-It doesn't matter what comes, fresh goes better in life, with Mentos fresh and full of Life! Nothing gets to you, stayin' fresh, stayin' cool, with Mentos fresh and full of life! Fresh goes better! Mentos freshness! Fresh goes better with Mentos, fresh and full of life! Mentos! The Freshmaker!
 
-We got a right to pick a little fight, Bonanza! If anyone fights anyone of us, he's gotta fight with me! We're not a one to saddle up and run, Bonanza! Anyone of us who starts a little fuss knows he can count on me! One for four, four for one, this we guarantee. We got a right to pick a little fight, Bonanza! If anyone fights anyone of us he's gotta fight with me!
-
+</h1>
