@@ -45,6 +45,20 @@
     right: 45px;
     font-size: 60px;
 }
+    
+.overlay-1{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 111111111;
+    top: 0;
+    left: 0;
+/*    opacity: 1;*/
+    background-color: rgb(255, 255, 255);
+        overflow-y: scroll;
+}
+    
 </style>
 
 <nav class="navbar navbar-default" style="position:fixed; width:100vw;">
@@ -53,6 +67,14 @@
     <li><a class="" href="/.">{{ site.title }}</a></li>
     <li><span class="a-page-info" style="font-size:30px;cursor:pointer" onclick="">&#9776;</span></li>
   </ul>
+     
+<!--NAV-LEFT-->
+{% if page.tag == "project-page" %}
+  <ul class="nav navbar-nav navbar-left" style="padding-left: 50px;">
+     <li><a class="a-project-info">Apie projekta</a></li>
+  </ul>
+{% endif %}
+     
  </div>
 </nav>
 
@@ -62,12 +84,40 @@
     <a href="/_pages/page-list.html">Page List</a>
     <a href="#">Clients</a>
     <a href="#">Contact</a>
-</div>    
+</div> 
+
+<div class="overlay-1">
+    <div class="row" id="">
+        <div class="col-xs-12" style="font-size: 21px; padding-left: 180px; padding-right: 300px; padding-top: 50px;">
+        <span><h1>{{page.project-page-title}}</h1>
+            <a style="font-size: 36px;" id="close-btn-1">&times;</a>
+        </span>
+        </div>
+        <div class="col-xs-12";>
+      <p style="font-size: 21px; padding-left: 180px; padding-right: 380px; padding-top: 50px;" > {{page.content}} </p>
+        </div>
+        
+        <div class="row">
+             
+        </div>
+            
+      </div>    
+    </div>   
 
 <script>
 $('.a-page-info').click(function(){
     console.log(".a-page-info");
         $(".overlay").fadeIn().css("display","block");
-});    
+});
+
+$('.a-project-info').click(function(){
+   $(".overlay-1").fadeIn().css("display","block");
+    overlay_is_on = true;
+      console.log(overlay_is_on);
+      });
+    
+$('#close-btn-1').click(function(){
+        $('.overlay-1').fadeOut("slow");
+    });
 
 </script>
