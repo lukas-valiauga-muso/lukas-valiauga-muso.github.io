@@ -59,18 +59,18 @@
 display: block;              
 }
 
-    .overlay-1{
-    height: 100%;
-    width: 100%;
-    display: none;
-    position: fixed;
-    z-index: 111111111;
-    top: 0;
-    left: 0;
-/*    opacity: 1;*/
-    background-color: rgb(255, 255, 255);
-        overflow-y: scroll;
-            }
+.overlay-1{
+height: 100%;
+width: 100%;
+display: none;
+position: fixed;
+z-index: 111111111;
+top: 0;
+left: 0;
+
+background-color: rgb(255, 255, 255);
+overflow-y: scroll;
+}
     
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
@@ -80,12 +80,20 @@ display: block;
     right: 35px;
   }
 }
-
     .info-icon{
             position: absolute;
     max-width: 20px;
     padding-top: 15px;
     }    
+
+.about-project{
+     padding: 50px 250px 50px;    
+}
+.about-project p {
+font-size: 23px;
+padding-top: 25px;
+line-height: 30px;
+}    
     
 </style>
 
@@ -102,12 +110,10 @@ display: block;
     <a href="#">Contact</a>
 </div>    
 <div class="overlay-1">
-    <div class="" id="">
-      <a style="font-size: 36px;" id="close-btn-1">&times;</a>
-      {{page.content}}
-      
-        
-        
+    <div class="about-project" id="">
+        <h1>{{page.project-page-title}}</h1>
+        <p>{{page.content}}</p>
+        <a style="font-size: 36px;" id="close-btn-1">&times;</a>
   </div>
 </div>    
     
@@ -137,12 +143,12 @@ display: block;
 
 
 <script>
-var overlay_is_on;
+var overlay_is_on = false;
 $(document).ready(function(){
   $('.a-project-info').click(function(){
    $(".overlay-1").fadeIn().css("display","block");
     overlay_is_on = true;
-      console.log(overlay_is_on);
+      console.log("overlay_is_on " + overlay_is_on);
       });
   $('#close-btn-1').click(function(){
         $('.overlay-1').fadeOut("slow");
@@ -150,15 +156,13 @@ $(document).ready(function(){
           console.log(overlay_is_on);
     });
     
-    
   $('.a-page-info').click(function(){
         $(".overlay").fadeIn().css("display","block");
    });
   
   $('#close-btn-2').click(function(){
         $('.overlay-1').fadeOut("slow");
-    });
-    
+    });   
 });
 
 </script>

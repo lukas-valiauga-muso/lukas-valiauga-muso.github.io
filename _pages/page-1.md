@@ -15,4 +15,3 @@ Kaip ir daugeliui vokiečių, palikusių namus ar išvytų, ištremtų iš Mažo
 <br><br>
 Apie fotografiją
 J. Bobrovskis kaip akmuo, riedulys lauko takelyje, atridentas ledynų po kojom, už kurio užkliuvęs parkrentu veidu į vėsią ir drėgną Sarmatijos žolę. Mėgindamas atsikelti apsiverčiu ant nugaros ir pamatau baltą, taip skaudžiai atpažįstamą apniukusį dangų, išlindusį iš už miško horizonto tarsi popieriaus lapą spausdinimo mašinėlėje, dar tuščią, neprirašytą, ar baltą fortepijono klavišą, laukiantį piršto prisilietimo. Jaučiu tą kažką, ką atpažįstu J. Bobrovskio kūryboje. Netikiu fotografijos galia, bet tikiu žmonėmis ir jų aplinkos ženklais, kurių atvaizdai lieka nuotraukose. Jaučiuosi viso to dalimi.
-
