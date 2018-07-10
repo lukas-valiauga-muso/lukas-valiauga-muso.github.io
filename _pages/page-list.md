@@ -39,7 +39,7 @@
  <ul class="list-group">
     {% for page in site.pages %}
     {% if page.tag == "project-page" %}
-  <li class="list-group-item"><a href="{{ page.url }}">{{ page.project-page-title: }}</a></li>
+  <li class="list-group-item"><a href="{{ page.url }}">{{ page.project-page-title }}</a></li>
     {% endif %}
     {% endfor %}
 </ul>
