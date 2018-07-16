@@ -13,9 +13,9 @@ body{
 }
 
 .interactive-text{
-    text-indent: -2.3%;
+    text-indent: -25px;
     padding-top: 80px;
-    padding-left: 50px;
+    padding-left: 10%;
     font-family: Pesaro;
     font-size: 10vh;
     color: black;

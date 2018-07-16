@@ -1,24 +1,23 @@
 
 <style>
-    .header-wrapper{
-        position:fixed; 
-        width:100vw; 
-        height:10vh; 
-/*        background-color:red; */
-        margin: 0px 0px 0px; 
-        opacity: 1.0;
-        z-index:111111111111;
-        }
+
     .navbar{
-        border-radius: 0px;
+        position: fixed;
+        width: 100vw;
+        border-width: 0px;
+        z-index: 2;
         background-color: rgba(255, 255, 255, 0);
-        border-style: none;
-    }  
-    .a-project-info{
-        left: 185px;
     }
-    .overlay {
-/*    margin-top: 48px;*/
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+    
+ .overlay {
     height: 100%;
     width: 100%;
     display: none;
@@ -26,18 +25,16 @@
     z-index: 111111111;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 1);        
+    background-color: rgb(255, 255, 255);        
 }
 
-.overlay-content {
+    .overlay-content {
     position: relative;
-    top: 25%;
+    top: 35%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
 }
-
 .overlay a {
     padding: 8px;
     text-decoration: none;
@@ -54,101 +51,41 @@
     top: 20px;
     right: 45px;
     font-size: 60px;
-}
-.header-visible {
-display: block;              
-}
-
-.overlay-1{
-height: 100%;
-width: 100%;
-display: none;
-position: fixed;
-z-index: 111111111;
-top: 0;
-left: 0;
-
-background-color: rgb(255, 255, 255);
-overflow-y: scroll;
-}
-    
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-    .info-icon{
-            position: absolute;
-    max-width: 20px;
-    padding-top: 15px;
-    }    
-
-.about-project{
-     padding: 50px 250px 50px;    
-}
-.about-project p {
-font-size: 23px;
-padding-top: 25px;
-line-height: 30px;
 }    
     
 </style>
 
 
-
-<div class="row header-wrapper" style="">
-
-<!--OVERLAY-->    
 <div class="overlay">
-    <a href="" id="close-btn-2">&times;</a>   
-    <a href="#">Bio</a>
+    <div class="overlay-content"> 
+    <a href="#">Biografija</a>
     <a href="/_pages/page-list.html">Page List</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-</div>    
-<div class="overlay-1">
-    <div class="about-project" id="">
-        <h1>{{page.project-page-title}}</h1>
-        <p>{{page.content}}</p>
-        <a style="font-size: 36px;" id="close-btn-1">&times;</a>
-  </div>
-</div>    
-    
-    
-<!--NAVBAR LEFT & RIGHT-->        
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-<!--NAV-LEFT-->
-          {% if page.tag == "project-page" %}
-          <ul class="nav navbar-nav">
-              <img class="info-icon" src="{{ "/info-icon.svg" }}">
-              <svg height="50" width="150">
-                <line x1="25" y1="25" x2="75" y2="25" style="stroke:rgb(0,0,0);stroke-width:1" />    
-              </svg>
-              <li><a class="a-project-info" href="#">Apie projekta</a></li>
-          </ul>
-          {% endif %}
-<!--NAV-RIGHT-->          
-          <ul class="nav navbar-nav navbar-right">
-                <li><a class="" href="/.">{{ site.title }}</a></li>
-                <li><span class="a-page-info" style="font-size:30px;cursor:pointer" onclick="">&#9776;</span></li>
-          </ul>
-      </div><!-- /.container-fluid -->
-    </nav><!-- /.navbar-default -->   
+    <a href="#">Kontaktai</a>
+    <a href="" id="close-btn-2">&times;</a>  
+    </div>
 </div>
 
 
+<nav class="navbar navbar-default" role="navigation">
+    {% if page.tag == "project-page" %}
+    <a class="navbar-brand" href="/index.html">{{site.title}}</a>
+    {% endif %}
+    <ul class="nav navbar-nav navbar-right">
+    {% if page.tag != "project-page" %}
+        <a class="navbar-brand" style="text-align: right; padding-right: 150px;" href="/index.html">{{site.title}}</a>
+    {% endif %}
+        <li><a class="a-page-info" style="font-size: 36px; padding-right: 100px;" >&#9776;</a></li>
+    </ul>        
+</nav>
+
 
 <script>
-var overlay_is_on = false;
+var overlay_is_on;
 $(document).ready(function(){
   $('.a-project-info').click(function(){
    $(".overlay-1").fadeIn().css("display","block");
     overlay_is_on = true;
-      console.log("overlay_is_on " + overlay_is_on);
+      console.log(overlay_is_on);
       });
   $('#close-btn-1').click(function(){
         $('.overlay-1').fadeOut("slow");
@@ -156,14 +93,18 @@ $(document).ready(function(){
           console.log(overlay_is_on);
     });
     
+    
   $('.a-page-info').click(function(){
         $(".overlay").fadeIn().css("display","block");
    });
   
   $('#close-btn-2').click(function(){
         $('.overlay-1').fadeOut("slow");
-    });   
+    });
+    
 });
 
 </script>
+
+
     
