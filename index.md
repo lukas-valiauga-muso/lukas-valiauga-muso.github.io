@@ -5,7 +5,7 @@ tag: index-page
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>{{site.title}}</title>
       {% include external-dependancies.html %}
       <link rel="stylesheet" type="text/css" href="/css/index-page-stylesheet.css">  
 <style>
@@ -43,10 +43,11 @@ tag: index-page
 </div>
     
 <div class="row">
-    <div class="col-xs-offset-3 col-xs-6">
+<!--    <div class="col-xs-offset-3 col-xs-6">-->
+    <div class="col-xs-12">
         <table width="100%" height="100%" align="center" valign="center">
         <div id="images" style=" position: fixed; background-color:#f0f0f0; height: 100vh; width:100vw; z-index:-1; top: 0vh;">
-          <img src="/assets/page-1/08.JPG" id="original" />
+          <img src="/assets/index-img-1.jpg" id="original" />
           <img src="/assets/page-1/08.JPG" id="hover_1_pic" />
           <img src="/assets/page-1/06.JPG" id="hover_2_pic" />
           <img src="/assets/page-1/07.JPG" id="hover_3_pic" />
