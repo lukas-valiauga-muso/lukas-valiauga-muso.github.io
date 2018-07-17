@@ -7,6 +7,15 @@
   </head>
   
   <body>
+      
+      <div class="overlay-project">
+        <div  class="overlay-project-wrapper">
+            <span class="overlay-project-title">{{ page.project-page-title }}</span>
+            <span class="overlay-project-content">{{ page.content }}</span>
+            <span class="overlay-project-title overlay-close">✕</span>
+        </div>    
+      </div>
+      
       {% include header.html %}
     <div class="row header-wrapper" style="">
   
@@ -25,7 +34,7 @@
                     {% endif %}
                 {% endfor %} 
               <div class="col-xs-12" style=" width: 100vw; height: 50px; bottom: 10px; position: fixed; background-color: ;">
-                <span class="navbar-brand">{{page.project-page-title}}</span>
+                <span class="navbar-brand project-title">{{page.project-page-title}}</span>
               </div>
           </div>
 <!--
@@ -38,6 +47,14 @@
     </div>
       
     <script src="{{ "/assets/js/horizontal-scroll-script.js" }}"></script>
+    <script>
+    $('.project-title').click(function(){
+        $(".overlay-project").fadeIn().css("display","block");
+    });  
     
+    $('.overlay-close').click(function(){
+        $('.overlay-project').fadeOut();
+    });      
+    </script>
 </body>
 </html>

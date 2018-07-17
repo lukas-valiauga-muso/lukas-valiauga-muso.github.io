@@ -72,3 +72,36 @@ height:5px;
 
 .sidebar{
 }
+
+.project-title{
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+}
+.overlay-project {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 111111111;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);        
+    overflow: scroll;
+    font-family: 'Muli', sans-serif;
+}
+.overlay-project-wrapper{
+/*    top, right, bottom, left*/
+    padding: 5% 15% 10% 15%;
+}
+.overlay-project-title{
+    display: block;
+    font-size: 35px;
+    font-weight:400;
+    padding-bottom: 30px;
+    color: black;
+    text-align: center;
+}
+.overlay-project-content{
+    font-size: 23px;
+    color: black;
+}

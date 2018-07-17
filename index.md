@@ -14,8 +14,9 @@ tag: index-page
       }
       #images img { 
           display: none; 
-          height: auto;
-/*          max-width:100vw;*/
+/*          height: 100%;*/
+/*          height: auto;*/
+          max-width:100%;
       }
       #images #original { 
           display: block; 
@@ -24,6 +25,7 @@ tag: index-page
           background:;
           opacity: 0.1;
      }    
+    
 </style>
       
   </head>
@@ -31,8 +33,7 @@ tag: index-page
 
 {% include header.html %}
 
-<div class="container-fluid">    
-
+<div class="container-fluid ">    
 <div class="row">
     <div class="interactive-text">
     <span class="int_txt string-1" id="hover_1" >"Netikiu<br>fotografijos galia,</span>
@@ -43,25 +44,22 @@ tag: index-page
 </div>
     
 <div class="row">
-<!--    <div class="col-xs-offset-3 col-xs-6">-->
-    <div class="col-xs-12">
-        <table width="100%" height="100%" align="center" valign="center">
-        <div id="images" style=" position: fixed; background-color:#f0f0f0; height: 100vh; width:100vw; z-index:-1; top: 0vh;">
+    <div class="col-xs-offset-3 col-xs-6">
+<!--    <div class="col-xs-12">-->
+        <div id="images" style=" position: fixed; background-color:; height: 70vh; width:40vw; z-index:-1; top: 10vh;">
           <img src="/assets/index-img-1.jpg" id="original" />
           <img src="/assets/page-1/08.JPG" id="hover_1_pic" />
           <img src="/assets/page-1/06.JPG" id="hover_2_pic" />
           <img src="/assets/page-1/07.JPG" id="hover_3_pic" />
           <img src="/assets/page-1/05.JPG" id="hover_4_pic" />
         </div>
-        </table>
     </div>    
 </div>
 
 </div>
 
 <script>
-$('span').hover( 
-    function(){
+$('span').hover(function(){
     var thisId = $(this).attr('id');
     $('#images img').stop().fadeOut('fast');
     $('#' + thisId + '_pic').delay(300).fadeIn('normal');
