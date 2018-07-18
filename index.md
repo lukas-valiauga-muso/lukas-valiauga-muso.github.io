@@ -9,23 +9,40 @@ tag: index-page
       {% include external-dependancies.html %}
       <link rel="stylesheet" type="text/css" href="/css/index-page-stylesheet.css">  
 <style>
-      span {  
-          cursor: pointer;
-      }
-      #images img { 
-          display: none; 
-/*          height: 100%;*/
-/*          height: auto;*/
-          max-width:100%;
-      }
-      #images #original { 
-          display: block; 
-      }
-      span:hover{
-          background:;
-          opacity: 0.1;
-     }    
-    
+span {  
+  cursor: pointer;
+}
+#images img { 
+  display: none; 
+  max-width:100%;
+}
+#images #original { 
+  display: block; 
+}
+span:hover{
+  background:;
+  color: white;    
+  opacity: 1.0;
+
+}    
+.img-container-1 {
+    position: fixed;
+    height:100vh;
+    z-index:-1;
+    opacity:0;
+    no-repeat center center fixed;
+    background: url() no-repeat center center fixed;
+    background-size: cover;
+}
+.img-container-2 {
+    position: fixed;
+    height:100vh;
+    z-index:-2;
+    opacity:0;
+    background: url() no-repeat center center fixed;
+    background-size: cover;
+}
+
 </style>
       
   </head>
@@ -34,43 +51,43 @@ tag: index-page
 {% include header.html %}
 
 <div class="container-fluid ">    
-<div class="row">
-    <div class="interactive-text">
-    <span class="int_txt string-1" id="hover_1" >"Netikiu<br>fotografijos galia,</span>
-    <span class="int_txt string-2" id="hover_2"> bet tikiu<br>žmonėmis ir jų<br>aplinkos ženklais,</span>
-    <span class="int_txt string-3" id="hover_3"> kurių atvaizdai lieka nuotraukose.</span>
-    <span class="int_txt string-4" id="hover_4"> Jaučiuosi viso to<br>dalimi.”</span>
+    <div class="row">
+    <div class="col-xs-12 img-container-1"></div>
     </div>
-</div>
-    
-<div class="row">
-    <div class="col-xs-offset-3 col-xs-6">
-<!--    <div class="col-xs-12">-->
-        <div id="images" style=" position: fixed; background-color:; height: 70vh; width:40vw; z-index:-1; top: 10vh;">
-          <img src="/assets/index-img-1.jpg" id="original" />
-          <img src="/assets/page-1/08.JPG" id="hover_1_pic" />
-          <img src="/assets/page-1/06.JPG" id="hover_2_pic" />
-          <img src="/assets/page-1/07.JPG" id="hover_3_pic" />
-          <img src="/assets/page-1/05.JPG" id="hover_4_pic" />
+    <div class="row">
+    <div class="col-xs-12 img-container-2"></div>
+    </div>
+    <div class="row">
+        <div class="interactive-text">
+        <span class="int_txt string-1" id="hover_1" >"Netikiu<br>fotografijos galia,</span>
+        <span class="int_txt string-2" id="hover_2"> bet tikiu<br>žmonėmis ir jų<br>aplinkos ženklais,</span>
+        <span class="int_txt string-3" id="hover_3"> kurių atvaizdai lieka nuotraukose.</span>
+        <span class="int_txt string-4" id="hover_4"> Jaučiuosi viso to<br>dalimi.”</span>
         </div>
-    </div>    
-</div>
-
+    </div>
+    
+    
+    
 </div>
 
 <script>
-$('span').hover(function(){
-    var thisId = $(this).attr('id');
-    $('#images img').stop().fadeOut('fast');
-    $('#' + thisId + '_pic').delay(300).fadeIn('normal');
-},
-function(){
-var thisId = $(this).attr('id');
-$('#' + thisId + '_pic').stop(true, true).fadeOut('fast',function(){
-      $('#original').stop(true, true).fadeIn('normal');
-       });
-    $('#original').stop(true, true).css('opacity', 1); 
- });
+  $(document).ready(function(){
+      $('.img-container-2').css('background-image', 'url("/assets/index-images/hover_0.jpg")');
+       $('.img-container-2').stop(true,true).fadeTo(500,1);
+          $('span').hover(
+              function(){
+                var thisId = $(this).attr('id');
+                 $('.img-container-2').stop(true,true).fadeTo(500,0);  
+                 $('.img-container-1').stop(true,true).css('background-image', 'url("/assets/index-images/' + thisId + '.jpg")');
+                   $('.img-container-1').stop(true,true).fadeTo(500,1);
+              },
+              function(){
+                  $('.img-container-1').stop(true,true).fadeTo(500,0);
+                  $('.img-container-2').stop(true,true).fadeTo(500,1);
+              }
+        );
+//          $('.img-container-1').css("opacity",1);     
+      });
 </script>
 
   </body>
