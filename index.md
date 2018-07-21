@@ -93,11 +93,9 @@ span:hover{
                   $('.img-container-2').stop(true,true).fadeTo(500,1);
               }
         );
-//          $('.img-container-1').css("opacity",1);     
-      
-      $('#hover_1').hover(function(){
-      $(this).fadeTo(500,0.1);
-      });
+//      $('#hover_1').hover(function(){
+//      $(this).fadeTo(500,0.1);
+//      });
       
       });
 </script>
