@@ -58,14 +58,21 @@ span:hover{
     <div class="col-xs-12 img-container-2"></div>
     </div>
     <div class="row">
-        <div class="interactive-text">
-        <span class="int_txt string-1" id="hover_1" >"Netikiu<br>fotografijos galia,</span>
-        <span class="int_txt string-2" id="hover_2"> bet tikiu<br>žmonėmis ir jų<br>aplinkos ženklais,</span>
+        <div class="interactive-text col-xs-11 col-xs-offset-1">
+        <span class="int_txt string-1" id="hover_1" >"Netikiu fotografijos galia,<br></span>
+        <span class="int_txt string-2" id="hover_2"> bet tikiu žmonėmis ir jų aplinkos ženklais,</span>
         <span class="int_txt string-3" id="hover_3"> kurių atvaizdai lieka nuotraukose.</span>
-        <span class="int_txt string-4" id="hover_4"> Jaučiuosi viso to<br>dalimi.”</span>
+        <span class="int_txt string-4" id="hover_4"> Jaučiuosi viso to dalimi.”</span>
         </div>
     </div>
-    
+    <div class="row">
+        <div class="info-text col-xs-11 col-xs-offset-1">
+            <a style="font-weight:400; font-size:13px;">Asmeninė ir reklamos fotografija</a>
+            <a>Tel: +37062059469</a>
+            <a>Email: arturas@valiauga.lt</a>
+        
+        </div>
+    </div>
     
     
 </div>
@@ -87,6 +94,11 @@ span:hover{
               }
         );
 //          $('.img-container-1').css("opacity",1);     
+      
+      $('#hover_1').hover(function(){
+      $(this).fadeTo(500,0.1);
+      });
+      
       });
 </script>
 

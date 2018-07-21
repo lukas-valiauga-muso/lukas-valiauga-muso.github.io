@@ -4,15 +4,20 @@
     <title>{{page.project-page-title}}</title>
     {% include external-dependancies.html %}   
     <link rel="stylesheet" type="text/css" href="/css/project-page-stylesheet.css">  
+      <style>
+      
+      </style>
   </head>
   
   <body>
       
       <div class="overlay-project">
-        <div  class="overlay-project-wrapper">
-            <span class="overlay-project-title">{{ page.project-page-title }}</span>
+        <div  class=" overlay-project-wrapper">
+         <div class="col-xs-9 col-xs-offset-1">
+            <span class="overlay-project-title">{{ page.project-page-title-overlay }}</span>
             <span class="overlay-project-content">{{ page.content }}</span>
             <span class="overlay-project-title overlay-close">✕</span>
+         </div>           
         </div>    
       </div>
       
@@ -33,8 +38,13 @@
                         </div>
                     {% endif %}
                 {% endfor %} 
-              <div class="col-xs-12" style=" width: 100vw; height: 50px; bottom: 10px; position: fixed; background-color: ;">
-                <span class="navbar-brand project-title">{{page.project-page-title}}</span>
+              <div class="col-xs-12" style=" width: 100vw; height: 50px; bottom: 25px; position: fixed; background-color: ; ">
+                <span class="navbar-brand project-title" >
+                <a style="text-decoration: none;" href="/_pages/page-list.html">Kūryba / </a>
+                <a style="text-decoration: none;">{{page.project-page-title}}</a></span>
+                  
+
+                  
               </div>
           </div>
 <!--

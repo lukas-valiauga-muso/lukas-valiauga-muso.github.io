@@ -1,11 +1,10 @@
 body{
 overflow:hidden;
-<!--background-color:grey;-->
+background-color:whitesmoke;
 }
 
 .container{
 width:100vw;
-<!--background-color:red;-->
 }
 .row{
 height:100vh;
@@ -74,8 +73,9 @@ height:5px;
 }
 
 .project-title{
-    font-family: 'Muli', sans-serif;
-    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.2px;
 }
 .overlay-project {
     height: 100%;
@@ -85,23 +85,30 @@ height:5px;
     z-index: 111111111;
     top: 0;
     left: 0;
-    background-color: rgb(255, 255, 255);        
+    background-color: #151515;        
     overflow: scroll;
-    font-family: 'Muli', sans-serif;
 }
-.overlay-project-wrapper{
-/*    top, right, bottom, left*/
-    padding: 5% 15% 10% 15%;
-}
+
 .overlay-project-title{
+    font-family: Pesaro;
     display: block;
-    font-size: 35px;
-    font-weight:400;
-    padding-bottom: 30px;
-    color: black;
-    text-align: center;
+    font-size: 70px;
+    color: whitesmoke;
+    padding:  100px 0px 50px 0px;
 }
 .overlay-project-content{
+    font-family: Oxygen;
     font-size: 23px;
-    color: black;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 35px;
+    color: whitesmoke;
+}
+a {
+    color: #151515;
+}
+
+a:hover {
+    color: #d4d4d4;
+    transition: 0.3s;
 }

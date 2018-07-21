@@ -8,12 +8,13 @@
         border-width: 0px;
         z-index: 2;
         background-color: rgba(255, 255, 255, 0);
-        font-family: 'Muli', sans-serif;
     
     }
-    .navbar a{
-        font-size: 16px;    
+    .navbar a:hover{
+        color: #d4d4d4!important;    
+        transition: 0.3s;
     }
+    
 .navbar-brand {
     position: absolute;
     width: 100%;
@@ -21,7 +22,19 @@
     top: 0;
     text-align: center;
     margin: auto;
+    cursor: pointer;
 }
+    .navbar-default .navbar-brand{
+    font-family: 'Pesaro', sans-serif;
+    color: #fafafa;
+    font-size: 18px;
+    letter-spacing: 3.0px;
+    }
+    .navbar-default .navbar-nav>li>a {
+    color: #fafafa;
+    font-size: 21px;
+    letter-spacing: 3.0px;  
+    }
     
  .overlay {
     height: 100%;
@@ -31,26 +44,27 @@
     z-index: 111111111;
     top: 0;
     left: 0;
-    background-color: rgb(255, 255, 255);        
+    background-color: whitesmoke;        
 }
 
     .overlay-content {
     position: relative;
-    top: 35%;
+    top: 28%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
-    color: #818181;
+    font-family: Pesaro;
+    font-size: 70px;
+    color: #151515;
     display: block;
     transition: 0.3s;
 }
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #959595;
 }
 .overlay .closebtn {
     position: absolute;
@@ -65,22 +79,26 @@
 <div class="overlay">
     <div class="overlay-content"> 
     <a href="#">Biografija</a>
-    <a href="/_pages/page-list.html">Page List</a>
+    <a href="/_pages/page-list.html">Kūryba</a>
     <a href="#">Kontaktai</a>
-    <a href="" id="close-btn-2">&times;</a>  
+    <a href="" id="close-btn-2" style="font-size: 36px;">✕</a>  
     </div>
 </div>
 
 
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default" role="navigation" style="cursor: pointer;">
     {% if page.tag == "project-page" %}
-    <a class="navbar-brand" href="/index.html">{{site.title}}</a>
+    <a class="navbar-brand" style="color:#151515;" href="/index.html">{{site.title}}</a>
     {% endif %}
     <ul class="nav navbar-nav navbar-right">
     {% if page.tag != "project-page" %}
-        <a class="navbar-brand" style="text-align: right; padding-right: 150px;" href="/index.html">{{site.title}}</a>
+<!--        <a class="navbar-brand" style="text-align: right; padding-right: 150px;" href="/index.html">{{site.title}}</a>-->
+        <a class="navbar-brand site-title" href="/index.html">{{site.title}}</a>
     {% endif %}
-        <li><a class="a-page-info" style="font-size: 36px; padding-right: 100px;" >&#9776;</a></li>
+        <li><a class="a-page-info" style="padding-right: 120px;" >&#9776;</a></li>
+        {% if page.tag == "project-page" %}
+        <li><a class="a-page-info" style="padding-right: 120px; color: #151515" >&#9776;</a></li>
+        {% endif %}
     </ul>        
 </nav>
 
