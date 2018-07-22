@@ -1,6 +1,5 @@
 ---
-page-title: Kūryba, asmeniniai ir reklamos projektai
-tag: page-list
+
 ---
 
 
@@ -10,19 +9,15 @@ tag: page-list
     <title>{{page.title}}</title>
     {%include external-dependancies.html%}  
    <style>
-       body
+       body{
+           background-color: whitesmoke;
+       }
        .page-list{
            height:100vh;
            margin: 0px;
            padding: 0px;
            }
-       .list-group{
-           padding-top:230px;
-           }
-       .list-group-item{
-           border:none;
-           background-color:#ffffff00;
-           }
+       
        .col-xs-12{
            background-color:whitesmoke;
            height:100vh;
@@ -46,9 +41,7 @@ tag: page-list
            color:lightgrey !important;
            transition: 0.3s;
            }
-       .project-title{
-           background-color: rgba(0, 0, 255, 0);
-           }
+      
        .page-title{
            font-family: Oxygen;
            font-size: 14px;
@@ -60,6 +53,34 @@ tag: page-list
            bottom: 25px; 
            position: fixed; 
            }
+       .overlay-project {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 111111111;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;        
+    opacity: 0.8;
+    overflow: scroll;
+}
+
+.overlay-project-title{
+    font-family: Pesaro;
+    display: block;
+    font-size: 70px;
+    color: black;
+    padding:  100px 0px 50px 0px;
+}
+.overlay-project-content{
+    font-family: Oxygen;
+    font-size: 23px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    line-height: 36px;
+    color: black;
+}
    </style>
       
   </head>
@@ -67,21 +88,15 @@ tag: page-list
 {% include header.html %}
 <div class="container-fluid">    
 <div class="row">   
- <div class="col-xs-12">
+<!-- <div class="col-xs-12">-->
  
-<ul class="list-group">
-     {% for page in site.pages %}
-         {% if page.tag == "project-page" %}
-           <li class="list-group-item col-xs-11 col-xs-offset-1">
-               <span style="">
-                   <a class="project-year" style="text-decoration:none; pointer-events: none;"> {{page.project-page-year}} </a>
-                   <a class="project-title" style="text-decoration:none;" href="{{ page.url }}">{{ page.project-page-title }}</a>
-               </span>
-           </li>
-          {% endif %}
-     {% endfor %}
-   </ul>
-  </div>     
+<div class="col-xs-9 col-xs-offset-1">
+            <span class="overlay-project-title">{{ page.page-title }}</span>
+            <span class="overlay-project-content">{{ page.content }}</span>
+         </div>   
+
+
+<!--  </div>     -->
  </div>
 <div class="col-xs-12 footer-div" style="">
     <span class="navbar-brand project-title">
@@ -102,13 +117,3 @@ tag: page-list
  
   </body>
 </html>
-
-    
-
-
-    
-    
-        
-        
-          
-      

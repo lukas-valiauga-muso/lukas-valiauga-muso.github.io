@@ -34,7 +34,11 @@
                 {% for image in site.static_files %}
                     {% if image.path contains page.title %}
                         <div class="col-xs-4" style="width:50vw; padding-top:15vh;">
+                            <div style="display: block; ">
+<!--                            <div class="image-caption" style="position: absolute; z-index: 1; font-size: 60%; background-color: aqua; width: 40vw; height: 60vh;  white-space: normal;">{{image.basename}}</div>-->
+                            </div>
                             <img class="" src="{{ site.baseurl }}{{ image.path }}" alt="image" />         
+                            
                         </div>
                     {% endif %}
                 {% endfor %} 
@@ -61,10 +65,10 @@
     $('.project-title').click(function(){
         $(".overlay-project").fadeIn().css("display","block");
     });  
-    
     $('.overlay-close').click(function(){
         $('.overlay-project').fadeOut();
     });      
     </script>
+      
 </body>
 </html>

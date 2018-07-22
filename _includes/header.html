@@ -20,8 +20,8 @@
     width: 100%;
     left: 0;
     top: 0;
-    text-align: center;
-    margin: auto;
+    text-align: left;
+    margin-left: 8%;
     cursor: pointer;
 }
     .navbar-default .navbar-brand{
@@ -78,7 +78,7 @@
 
 <div class="overlay">
     <div class="overlay-content"> 
-    <a href="#">Biografija</a>
+    <a href="/_pages/page-bio.html">Biografija</a>
     <a href="/_pages/page-list.html">Kūryba</a>
     <a href="#">Kontaktai</a>
     <a href="" id="close-btn-2" style="font-size: 36px;">✕</a>  
@@ -87,14 +87,11 @@
 
 
 <nav class="navbar navbar-default" role="navigation" style="cursor: pointer;">
-    {% if page.tag == "project-page" %}
+    
     <a class="navbar-brand" style="color:#151515;" href="/index.html">{{site.title}}</a>
-    {% endif %}
+    
     <ul class="nav navbar-nav navbar-right">
-    {% if page.tag != "project-page" %}
-<!--        <a class="navbar-brand" style="text-align: right; padding-right: 150px;" href="/index.html">{{site.title}}</a>-->
-        <a class="navbar-brand site-title" href="/index.html">{{site.title}}</a>
-    {% endif %}
+
         <li><a class="a-page-info" style="padding-right: 120px;" >&#9776;</a></li>
         {% if page.tag == "project-page" %}
         <li><a class="a-page-info" style="padding-right: 120px; color: #151515" >&#9776;</a></li>
