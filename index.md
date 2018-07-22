@@ -5,6 +5,7 @@ tag: index-page
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="google" content="notranslate" />  
     <title>{{site.title}}</title>
       {% include external-dependancies.html %}
       <link rel="stylesheet" type="text/css" href="/css/index-page-stylesheet.css">  
