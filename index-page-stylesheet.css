@@ -1,5 +1,6 @@
 body{
 /*    overflow: hidden;*/
+    background-color: whitesmoke;
 }
 
 .interactive-text{
@@ -14,13 +15,6 @@ body{
     letter-spacing: 2.8px;
     line-height: 110px;
     color: black;
-    transition: 0.3s;
-/*    opacity: 0.7;*/
-/*    background-color:"";*/
-
-    background: -webkit-linear-gradient(-20deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.29735644257703087) 100%);
-  -webkit-background-clip: text;
-/*  -webkit-text-fill-color: transparent; */
 }
 .info-text{
     color: #fafafa !important;

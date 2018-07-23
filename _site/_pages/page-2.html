@@ -1,32 +1,279 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1561.4">
-    
-  <style type="text/css">
-    p.p1 {
-        margin: 0.0px 0.0px 0.0px 0.0px; 
-        font: 22.0px Times; 
-        color: #000000; 
-        -webkit-text-stroke: #000000
-      }
+  <head>
+    <meta charset="UTF-8">
+    <title>Japonijos dienos meniu</title>
+    <meta name="google" content="notranslate">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+
+<style>
+@font-face {
+    font-family: Gotham-light;
+    src: url(/assets/fonts/Gotham-Light.woff);
+}
+@font-face {
+    font-family: Pesaro;
+    src: url(/assets/fonts/Hoftype_Pesaro_Bold.woff);
+}    
+</style>   
+    <link rel="stylesheet" type="text/css" href="/css/project-page-stylesheet.css">  
+      <style>
       
-    span.s1 {
-        font-kerning: none
-      }
-  </style>
-    
-</head>
-    
-<body>
-<p class="p1"><span class="s1"><p>It doesn’t matter what comes, fresh goes better in life, with Mentos fresh and full of Life! Nothing gets to you, stayin’ fresh, stayin’ cool, with Mentos fresh and full of life! Fresh goes better! Mentos freshness! Fresh goes better with Mentos, fresh and full of life! Mentos! The Freshmaker!</p>
+      </style>
+  </head>
+  
+  <body>
+      
+      <div class="overlay-project">
+        <div  class=" overlay-project-wrapper">
+         <div class="col-xs-9 col-xs-offset-1">
+            <span class="overlay-project-title"></span>
+            <span class="overlay-project-content"></span>
+            <span class="overlay-project-title overlay-close">✕</span>
+         </div>           
+        </div>    
+      </div>
+      
+      
+<style>
 
-<p>We got a right to pick a little fight, Bonanza! If anyone fights anyone of us, he’s gotta fight with me! We’re not a one to saddle up and run, Bonanza! Anyone of us who starts a little fuss knows he can count on me! One for four, four for one, this we guarantee. We got a right to pick a little fight, Bonanza! If anyone fights anyone of us he’s gotta fight with me!</p>
+    .navbar{
+        position: fixed;
+        top: 30px;
+        width: 100vw;
+        border-width: 0px;
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 0);
+    
+    }
+    .navbar a:hover{
+        color: #d4d4d4!important;    
+        transition: 0.3s;
+    }
+    
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: left;
+    margin-left: 8%;
+    cursor: pointer;
+}
+    .navbar-default .navbar-brand{
+    font-family: 'Pesaro', sans-serif;
+    color: #fafafa;
+    font-size: 18px;
+    letter-spacing: 3.0px;
+    }
+    .navbar-default .navbar-nav>li>a {
+    color: #fafafa;
+    font-size: 21px;
+    letter-spacing: 3.0px;  
+    }
+    
+ .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 111111111;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;        
+}
 
-<span class="Apple-converted-space"> </span></span></p>
+    .overlay-content {
+    position: relative;
+    top: 28%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-family: Pesaro;
+    font-size: 70px;
+    color: #151515;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #959595;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}    
+    
+</style>
+
+
+<div class="overlay">
+    <div class="overlay-content"> 
+    <a href="/_pages/page-bio.html">Biografija</a>
+    <a href="/_pages/page-list.html">Kūryba</a>
+    <a href="#">Kontaktai</a>
+    <a href="" id="close-btn-2" style="font-size: 36px;">✕</a>  
+    </div>
+</div>
+
+
+<nav class="navbar navbar-default" role="navigation" style="cursor: pointer;">
+    
+    <a class="navbar-brand" style="color:#151515;" href="/index.html">Arturas Valiauga</a>
+    
+    <ul class="nav navbar-nav navbar-right">
+
+        <li><a class="a-page-info" style="padding-right: 120px;" >&#9776;</a></li>
+        
+        <li><a class="a-page-info" style="padding-right: 120px; color: #151515" >&#9776;</a></li>
+        
+    </ul>        
+</nav>
+
+
+<script>
+var overlay_is_on;
+$(document).ready(function(){
+  $('.a-project-info').click(function(){
+   $(".overlay-1").fadeIn().css("display","block");
+    overlay_is_on = true;
+      console.log(overlay_is_on);
+      });
+    
+  $('#close-btn-1').click(function(){
+        $('.overlay-1').fadeOut("slow");
+         overlay_is_on = false;
+          console.log(overlay_is_on);
+    });
+    
+    
+  $('.a-page-info').click(function(){
+        $(".overlay").fadeIn().css("display","block");
+   });
+  
+  $('#close-btn-2').click(function(){
+        $('.overlay-1').fadeOut("slow");
+    });
+    
+});
+
+</script>
+
+
+    
+
+    <div class="row header-wrapper" style="">
+  
+        <div class="row" style="position:fixed; width:20vw; height:70vh; top:15vh; opacity: 0.7; background: -webkit-linear-gradient(left, rgba(255,255,255,87) -15%,rgba(255,255,255,0) 90%,rgba(255,255,255,0) 100%); z-index:1;"></div> 
+        
+        <div class="row sidebar" style="position:fixed; width:10vw; height:70vh; top:15vh; left:90vw; margin: 0px 0px 0px; opacity: 0.7; background: -webkit-linear-gradient(right, rgba(255,255,255,87) -115%,rgba(255,255,255,-5) 91%,rgba(255,255,255,0) 185%); z-index:111; z-index:1"></div>     
+  
+  
+        <div class="container testimonial-group">
+          <div class="row" id="text-center">  
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                 
+              <div class="col-xs-12" style=" width: 100vw; height: 50px; bottom: 25px; position: fixed; background-color: ; ">
+                <span class="navbar-brand project-title" >
+                <a style="text-decoration: none;" href="/_pages/page-list.html">Kūryba / </a>
+                <a style="text-decoration: none;">Japonijos dienos meniu</a></span>
+                  
+
+                  
+              </div>
+          </div>
+<!--
+            <div class="row">
+            
+        </div>
+-->
+        </div>
+        
+    </div>
+      
+    <script src="/assets/js/horizontal-scroll-script.js"></script>
+    <script>
+    $('.project-title').click(function(){
+        $(".overlay-project").fadeIn().css("display","block");
+    });  
+    $('.overlay-close').click(function(){
+        $('.overlay-project').fadeOut();
+    });      
+    </script>
+      
 </body>
 </html>

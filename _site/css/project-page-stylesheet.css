@@ -1,15 +1,13 @@
 body{
 overflow:hidden;
-<!--background-color:grey;-->
+background-color:whitesmoke;
 }
 
 .container{
 width:100vw;
-<!--background-color:red;-->
 }
 .row{
 height:100vh;
-<!--background-color:yellow;-->
 }
 
 /* The heart of the matter */
@@ -24,13 +22,11 @@ height:100vh;
 
 /* Decorations */
 .col-xs-4 { 
-
   height:85vh;
   width:50vw;
   font-size: 48px; 
   padding:20px 50px 20px;
-  
-  
+/*    background-color: firebrick;*/
 }
 
 
@@ -58,6 +54,7 @@ img {
 body ::-webkit-scrollbar {
 /*    background-color: black;*/
 height:5px;
+width: 5px;
   }
   
   
@@ -71,4 +68,55 @@ height:5px;
 }
 
 .sidebar{
+}
+
+.project-title{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+.overlay-project {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 111111111;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;        
+    opacity: 0.8;
+    overflow: scroll;
+}
+
+.overlay-project-title{
+    font-family: Pesaro;
+    display: block;
+    font-size: 70px;
+    color: black;
+    padding:  100px 0px 50px 0px;
+}
+.overlay-project-content{
+    font-family: Oxygen;
+    font-size: 23px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    line-height: 36px;
+    color: black;
+}
+a {
+    color: #151515;
+}
+
+a:hover {
+    color: #d4d4d4;
+    transition: 0.3s;
+}
+.image-caption{
+    font-family: Pesaro;
+/*    top: 80%;*/
+    opacity:0.3;
+}
+.image-caption:hover{
+    opacity: 1;
+    transition: 0.3s;
 }

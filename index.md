@@ -59,11 +59,11 @@ span:hover{
     <div class="col-xs-12 img-container-2"></div>
     </div>
     <div class="row">
-   <div class="interactive-text col-xs-11 col-xs-offset-1 tlt">
-        <span class="int_txt string-1" id="hover_1" >"Netikiu fotografijos galia,<br></span>
+        <div class="interactive-text col-xs-11 col-xs-offset-1" style="opacity:0;">
+        <span class="int_txt string-1" id="hover_1" style="position: relative;" >"Netikiu fotografijos galia,<br></span>
         <span class="int_txt string-2" id="hover_2"> bet tikiu žmonėmis ir jų aplinkos ženklais,</span>
         <span class="int_txt string-3" id="hover_3"> kurių atvaizdai lieka nuotraukose.</span>
-        <span class="int_txt string-4" id="hover_4"> Jaučiuosi viso to dalimi.”</span>     
+        <span class="int_txt string-4" id="hover_4"> Jaučiuosi viso to dalimi.”</span>
         </div>
     </div>
     <div class="row">
@@ -77,17 +77,18 @@ span:hover{
     
     
 </div>
+
 <script>
   $(document).ready(function(){
-    $('.tlt').fadeIn("slow");
-      $('.img-container-2').css('background-image', 'url("/assets/index-images/hover_0.jpg")');
-       $('.img-container-2').stop(true,true).fadeTo(500,1);
+    $('.img-container-2').css('background-image', 'url("/assets/index-images/hover_0.jpg")');
+      $('.interactive-text').stop(true,true).delay(650).fadeTo(1500,1);
+       $('.img-container-2').stop(true,true).fadeTo(1500,1);
           $('span').hover(
               function(){
                 var thisId = $(this).attr('id');
-                 $('.img-container-2').stop(true,true).fadeTo(500,0);  
+                 $('.img-container-2').stop(true,true).fadeTo(1000,0);  
                  $('.img-container-1').stop(true,true).css('background-image', 'url("/assets/index-images/' + thisId + '.jpg")');
-                   $('.img-container-1').stop(true,true).fadeTo(500,1);
+                   $('.img-container-1').stop(true,true).fadeTo(1000,1);
               },
               function(){
                   $('.img-container-1').stop(true,true).fadeTo(500,0);
@@ -97,7 +98,12 @@ span:hover{
 //      $('#hover_1').hover(function(){
 //      $(this).fadeTo(500,0.1);
 //      });
+      
       });
 </script>
+
+<script>
+</script>    
+
 
   </body>
