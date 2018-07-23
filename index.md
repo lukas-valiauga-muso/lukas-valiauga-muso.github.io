@@ -59,12 +59,12 @@ span:hover{
     <div class="row">
     <div class="col-xs-12 img-container-2"></div>
     </div>
-    <div class="row">
+    <div class="row tlt">
         <div class="interactive-text col-xs-11 col-xs-offset-1 ">
-        <span class="int_txt string-1 tlt" id="hover_1" >"Netikiu fotografijos galia,<br></span>
-        <span class="int_txt string-2 tlt" id="hover_2"> bet tikiu žmonėmis ir jų aplinkos ženklais,</span>
-        <span class="int_txt string-3 tlt" id="hover_3"> kurių atvaizdai lieka nuotraukose.</span>
-        <span class="int_txt string-4 tlt" id="hover_4"> Jaučiuosi viso to dalimi.”</span>
+        <span class="int_txt string-1" id="hover_1" >"Netikiu fotografijos galia,<br></span>
+        <span class="int_txt string-2" id="hover_2"> bet tikiu žmonėmis ir jų aplinkos ženklais,</span>
+        <span class="int_txt string-3" id="hover_3"> kurių atvaizdai lieka nuotraukose.</span>
+        <span class="int_txt string-4" id="hover_4"> Jaučiuosi viso to dalimi.”</span>
         </div>
     </div>
     <div class="row">
