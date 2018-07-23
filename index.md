@@ -9,7 +9,6 @@ tag: index-page
     <title>{{site.title}}</title>
       {% include external-dependancies.html %}
       <link rel="stylesheet" type="text/css" href="/css/index-page-stylesheet.css">  
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <style>
 span {  
   cursor: pointer;
@@ -60,11 +59,11 @@ span:hover{
     <div class="col-xs-12 img-container-2"></div>
     </div>
     <div class="row tlt">
-        <div class="interactive-text col-xs-11 col-xs-offset-1 ">
+   <div class="interactive-text col-xs-11 col-xs-offset-1 ">
         <span class="int_txt string-1" id="hover_1" >"Netikiu fotografijos galia,<br></span>
         <span class="int_txt string-2" id="hover_2"> bet tikiu žmonėmis ir jų aplinkos ženklais,</span>
         <span class="int_txt string-3" id="hover_3"> kurių atvaizdai lieka nuotraukose.</span>
-        <span class="int_txt string-4" id="hover_4"> Jaučiuosi viso to dalimi.”</span>
+        <span class="int_txt string-4" id="hover_4"> Jaučiuosi viso to dalimi.”</span>     
         </div>
     </div>
     <div class="row">
@@ -78,15 +77,6 @@ span:hover{
     
     
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
-<script>
-  $('.tlt').textillate({
-              in: {
-                  effect: 'fadeIn'
-              }      
-          });
-</script>
 <script>
   $(document).ready(function(){
       $('.img-container-2').css('background-image', 'url("/assets/index-images/hover_0.jpg")');
@@ -106,7 +96,7 @@ span:hover{
 //      $('#hover_1').hover(function(){
 //      $(this).fadeTo(500,0.1);
 //      });
-      
+      $('.tlt').fadeIn("slow");
       });
 </script>
 
