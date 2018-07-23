@@ -58,8 +58,8 @@ span:hover{
     <div class="row">
     <div class="col-xs-12 img-container-2"></div>
     </div>
-    <div class="row tlt">
-   <div class="interactive-text col-xs-11 col-xs-offset-1 ">
+    <div class="row">
+   <div class="interactive-text col-xs-11 col-xs-offset-1 tlt">
         <span class="int_txt string-1" id="hover_1" >"Netikiu fotografijos galia,<br></span>
         <span class="int_txt string-2" id="hover_2"> bet tikiu žmonėmis ir jų aplinkos ženklais,</span>
         <span class="int_txt string-3" id="hover_3"> kurių atvaizdai lieka nuotraukose.</span>
@@ -79,6 +79,7 @@ span:hover{
 </div>
 <script>
   $(document).ready(function(){
+    $('.tlt').fadeIn("slow");
       $('.img-container-2').css('background-image', 'url("/assets/index-images/hover_0.jpg")');
        $('.img-container-2').stop(true,true).fadeTo(500,1);
           $('span').hover(
@@ -96,7 +97,6 @@ span:hover{
 //      $('#hover_1').hover(function(){
 //      $(this).fadeTo(500,0.1);
 //      });
-      $('.tlt').fadeIn("slow");
       });
 </script>
 
