@@ -85,7 +85,6 @@ span:hover{
     
     
 </div>
-setTimeout(function(){ alert("Hello");}, 3000);
 <script>
   $(document).ready(function(){
      $('.img-container-2').css('background-image', 'url("/assets/index-images/hover_0.jpg")');
@@ -108,9 +107,6 @@ setTimeout(function(){ alert("Hello");}, 3000);
 </script>
 
 <script>
-$('.preload').waitForImages(function() {
-//    alert('All images are loaded.');
-});    
 </script>    
 
 
