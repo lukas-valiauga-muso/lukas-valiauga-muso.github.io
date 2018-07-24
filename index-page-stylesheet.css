@@ -13,8 +13,12 @@ body{
 /*    font-size: 4vw;*/
     max-width: 1420px;
     letter-spacing: 2.8px;
-    line-height: 110px;
+/*    line-height: 110px;*/
+    line-height: 75pt;
     color: black;
+}
+.interactive-text:hover{
+    
 }
 .info-text{
     color: #fafafa !important;

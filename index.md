@@ -12,6 +12,7 @@ tag: index-page
 <style>
 span {  
   cursor: pointer;
+  transition: 0.5s
 }
 #images img { 
   display: none; 
@@ -24,7 +25,7 @@ span:hover{
   background:;
   color: white;    
   opacity: 1.0;
-
+  transition: 0.5s
 }    
 .img-container-1 {
     position: fixed;
@@ -48,6 +49,13 @@ span:hover{
       
   </head>
 <body>
+<div class="preload" style="opacity: 0; position: absolute; top: -9999px; left: -9999px;">
+    <img src="/assets/index-images/hover_0.jpg" alt="">
+    <img src="/assets/index-images/hover_1.jpg" alt="">
+    <img src="/assets/index-images/hover_2.jpg" alt="">
+    <img src="/assets/index-images/hover_3.jpg" alt="">
+    <img src="/assets/index-images/hover_4.jpg" alt="">
+</div><!-- /.preload -->    
 
 {% include header.html %}
 
@@ -77,32 +85,32 @@ span:hover{
     
     
 </div>
-
+setTimeout(function(){ alert("Hello");}, 3000);
 <script>
   $(document).ready(function(){
-    $('.img-container-2').css('background-image', 'url("/assets/index-images/hover_0.jpg")');
+     $('.img-container-2').css('background-image', 'url("/assets/index-images/hover_0.jpg")');
       $('.interactive-text').stop(true,true).delay(650).fadeTo(1500,1);
        $('.img-container-2').stop(true,true).fadeTo(1500,1);
-          $('span').hover(
-              function(){
-                var thisId = $(this).attr('id');
+          $('span').hover(hover_on,hover_off);
+    });  
+    function hover_on(){
+    var thisId = $(this).attr('id');          
                  $('.img-container-2').stop(true,true).fadeTo(1000,0);  
                  $('.img-container-1').stop(true,true).css('background-image', 'url("/assets/index-images/' + thisId + '.jpg")');
-                   $('.img-container-1').stop(true,true).fadeTo(1000,1);
-              },
-              function(){
-                  $('.img-container-1').stop(true,true).fadeTo(500,0);
-                  $('.img-container-2').stop(true,true).fadeTo(500,1);
-              }
-        );
-//      $('#hover_1').hover(function(){
-//      $(this).fadeTo(500,0.1);
-//      });
-      
-      });
+                 $('.img-container-1').stop(true,true).fadeTo(1000,1);
+    }
+    function hover_off(){
+    $('.img-container-1').stop(true,true).fadeTo(500,0);
+                 $('.img-container-2').stop(true,true).fadeTo(500,1);
+                  }
+    
+    
 </script>
 
 <script>
+$('.preload').waitForImages(function() {
+//    alert('All images are loaded.');
+});    
 </script>    
 
 
