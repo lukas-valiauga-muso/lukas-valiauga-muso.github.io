@@ -10,6 +10,7 @@ tag: index-page
       {% include external-dependancies.html %}
       <link rel="stylesheet" type="text/css" href="/css/index-page-stylesheet.css">  
 <style>
+    
 span {  
   cursor: pointer;
   transition: 0.5s
@@ -56,7 +57,6 @@ span:hover{
     <img src="/assets/index-images/hover_3.jpg" alt="">
     <img src="/assets/index-images/hover_4.jpg" alt="">
 </div><!-- /.preload -->    
-
 {% include header.html %}
 
 <div class="container-fluid ">    

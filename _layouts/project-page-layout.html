@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <title>{{page.project-page-title}}</title>
     {% include external-dependancies.html %}   
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>  
     <link rel="stylesheet" type="text/css" href="/css/project-page-stylesheet.css">  
       <style>
       
@@ -37,7 +39,7 @@
                             <div style="display: block; ">
 <!--                            <div class="image-caption" style="position: absolute; z-index: 1; font-size: 60%; background-color: aqua; width: 40vw; height: 60vh;  white-space: normal;">{{image.basename}}</div>-->
                             </div>
-                            <img class="" src="{{ site.baseurl }}{{ image.path }}" alt="image" />         
+                            <img data-featherlight="{{ site.baseurl }}{{ image.path }}" src="{{ site.baseurl }}{{ image.path }}" alt="image" />         
                             
                         </div>
                     {% endif %}
